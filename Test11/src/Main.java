@@ -71,7 +71,7 @@ public class Main {
 
 			  String x = myownName.substring(1,2);
 		 */
-
+/*
 		
 		Integer a = new Scanner(System.in).nextInt();;
 		String nom = "";
@@ -104,26 +104,57 @@ public class Main {
 				System.out.println("");
 
 			}
-		}
-			
+		} 
+			*/
 			//System.out.println(compteur);
 			
 			//System.out.println(nom.chartAt(0));
 			//System.out.printLn(nom.equals("f")); 
 			
 			
-		//Integer a = 5;
-		//Integer tmpa=1;
-		//for (int i=0; i<a;i++)
-		//{
-			//for (int j=0;j<tmpa;j++)
-			//{
-				//System.out.print("*");
-			//}
-			//tmpa++;
-			//System.out.println("");
-		//}
 	
+		System.out.println("Enter a number:");
+		Integer a = new Scanner(System.in).nextInt();
+		char tmp_char = 'x', space = ' ', star='*';
+		Integer tmpa=1;
+		if (a < 0)
+		{
+			tmp_char = space;
+			space = star;
+			star = tmp_char;
+			a = Math.abs(a);
+		}
+			
+
+		for (int i=0; i<a;i++)
+		{
+			for (int j=0;j<tmpa;j++)
+			{
+				System.out.print(star);
+			}
+
+
+			for (int j=0;j<a-tmpa;j++)
+			{
+				System.out.print(space);
+			}
+			tmpa++;
+			System.out.println("");
+		}
+
+		/*Integer a = 5;
+		Integer tmpa=1;
+		for (int i=0; i<a;i++)
+		{
+			for (int j=0;j<tmpa;j++)
+			{
+				System.out.print(" ");
+			}
+			tmpa++;
+			System.out.println("*");
+		}
+		*/
+	  
 		
 			
 			    
