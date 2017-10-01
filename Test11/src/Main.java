@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 public class Main {
-	
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*Integer a = 5;
 		System.out.print("a vaut ");
 		System.out.println(a);
-		
+
 		// concatenation
 		System.out.println("a vaut " + a );
-		
+
 		String nom = "SAM";
 		String prenom = "SAM";
 		System.out.println("je m'appel"+ nom + " " + prenom );
@@ -42,15 +42,15 @@ public class Main {
 			compteur = compteur+1;
 			//compteur -=2; 
 		System.out.println("apres");
-		 
+
 		} 
 		Integer[] note = new Integer[4];
 		note [0]= 12;
 		note [1]= 13;
 		note [2]= 14;
 		note [3]= 15;
-		 
-		
+
+
 		for (int i=0;i<note.length;i++)
 			{
 				if (note[i] % 2 ==0)	
@@ -61,31 +61,40 @@ public class Main {
 			System.out.printLn(12%2);
 			String str ="tets";
 			String lettreA = "a";
-			
+
 			// subString(0,1) recupere 1 caractere a partir de la position 0
 			String x = myownName.subtring(1,2);
 			System.outprintLn(x);
 			System.out.printLn(str.cahrtAt(0));
 			System.out.printLn(str.lenght());
 			System.out.printLn(lettreA.equqls("a"));
-			
+
 			  String x = myownName.substring(1,2);
-			  */
-			  
-			 
-			 
-			
-			String nom = "*****";
-			
+		 */
+
+		
+		Integer a = new Scanner(System.in).nextInt();;
+		String nom = "";
+
+		if ( a >= 0) 
+
+		{
+			nom = "*****";
+
+
 			for (int i=0;i<nom.length();i++)
 			{
 				String lettre = nom.substring(0,i+1);
 				System.out.println(lettre);
-			 
-			    
+
+
 			}
-			nom = "xxxxx";
-						
+		}
+
+		
+		else{
+			nom = "     ";
+
 			for (int i=1;i<=nom.length();i++)
 			{
 				String lettre = nom.substring(0,nom.length()-i);
@@ -93,9 +102,10 @@ public class Main {
 				for (int j=0; j<i; j++)
 					System.out.print("*");
 				System.out.println("");
-				   
+
 			}
-			 
+		}
+			
 			//System.out.println(compteur);
 			
 			//System.out.println(nom.chartAt(0));
