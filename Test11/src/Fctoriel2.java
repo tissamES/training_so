@@ -14,8 +14,8 @@ public class Fctoriel2 {
                 if (n!=0)
                 {for (i=1;i<a;i++)
                      n=n*i;
-                	 
-                	 System.out.println(n);
+                	 Factoriel [i-1]=n;
+                	 System.out.println(Factoriel[i-1]);
             
                 }
                 else
